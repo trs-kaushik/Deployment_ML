@@ -28,11 +28,11 @@
 
      <!-- Main Input For Receiving Query to our ML -->
 					<form action="{{ url_for('predict')}}"method="post">
-					<input type="text" name="PageValues" placeholder="PageValues" required="required" />
-					<input type="text" name="ExitRates" placeholder="ExitRates" required="required" />
-					<input type="text" name="Administrative" placeholder="Administrative" required="required" />
-					<input type="text" name="Month" placeholder="Month" required="required" />
-					<input type="text" name="ProductRelated_Duration" placeholder="ProductRelated_Duration" required="required" />
+					<input type="text" name="PageValues" placeholder="PageValues (Eg:0,100,300)" required="required" />
+					<input type="text" name="ExitRates" placeholder="ExitRates (Eg:0.0,0.1)" required="required" />
+					<input type="text" name="Administrative" placeholder="Administrative (Eg:0,10,20)" required="required" />
+					<input type="text" name="Month" placeholder="Month (Eg:Feb,May,Nov)" required="required" />
+					<input type="text" name="ProductRelated_Duration" placeholder="ProductRelated_Duration (Eg:0,1000,2000)" required="required" />
 
 					<button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
 					</form>
