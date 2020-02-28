@@ -15,7 +15,7 @@ def predict():
     '''
     For rendering results on HTML GUI
     '''
-    month_map = {"May": 6, "Nov": 7, "Mar": 5, "Dec": 1, "Oct": 8, "Sep": 9, "Aug": 0, "Jul": 3, "June": 4, "Feb": 2}
+    month_map = {"Jan":2, "May": 6, "Nov": 7, "Mar": 5, "Dec": 1, "Oct": 8, "Sep": 9, "Aug": 0, "Jul": 3, "June": 4, "Feb": 2}
 
     data = np.array([x for x in request.form.values()])
     column = ["PageValues", "ExitRates", "Administrative", "Month", "ProductRelated_Duration"]
